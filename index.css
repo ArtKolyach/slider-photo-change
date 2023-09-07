@@ -80,6 +80,7 @@
 
 .photo:hover {
     transform: scale(1.8, 1.8);
+    z-index: 1;
 }
 
 .break-image {
@@ -123,6 +124,9 @@ body {
         object-fit: cover;
         max-width: 380px
     }
+    .photo:hover {
+        transform: scale(1.8);
+    }
 
     h1 {
         white-space: nowrap;
@@ -130,5 +134,28 @@ body {
 
     h2 {
         font-size: 3em;
+        margin: 20px 0;
+    }
+
+    .banner-wrapper {
+        height: 1000px;
+        width: 75vw;
+    }
+
+    .element-wrapper {
+        margin-bottom: 70px;
+    }
+
+    .banner .banner-content img {
+        width: 75vw;
+        height: initial;
+    }
+
+    .element-wrapper:after {
+        transform: scale(1.1, 1);
+    }
+
+    .element-wrapper:nth-child(even):after {
+        transform: scale(-1.1, 1);
     }
 }
