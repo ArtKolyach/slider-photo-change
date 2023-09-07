@@ -109,4 +109,26 @@ h2 {
 
 body {
     overflow-x: hidden;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+@media only screen and (max-width: 1023px) {
+    .photo {
+        margin: 0 32px;
+        height: 680px;
+        object-fit: cover;
+        max-width: 380px
+    }
+
+    h1 {
+        white-space: nowrap;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
 }

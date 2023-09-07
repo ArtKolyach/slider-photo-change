@@ -9,5 +9,10 @@ document.addEventListener('DOMContentLoaded', function(){
             delta = ((e.pageX - banner.getBoundingClientRect().left) - banner.offsetWidth / 2) * 0.5;
             devLayer.style.width = (e.pageX - banner.getBoundingClientRect().left) + 200 + delta + 'px';
         });
+
+        banner.addEventListener('touchmove', e => {
+            delta = ((e.touches[0].pageX - banner.getBoundingClientRect().left) - banner.offsetWidth / 2) * 0.5;
+            devLayer.style.width = (e.touches[0].pageX - banner.getBoundingClientRect().left) + 200 + delta + 'px';
+        })
     })
 })
