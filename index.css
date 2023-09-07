@@ -46,7 +46,7 @@
 }
 
 .element-wrapper:after {
-    content: url("/images/arrow.png");
+    content: url("./images/arrow.png");
     position: absolute;
     z-index: -1;
     transform: scale(0.8);
